@@ -1,0 +1,134 @@
+.app-home{
+    max-width: 1400px;
+    margin: 20px auto;
+}
+.heading{
+    text-align: center;
+}
+.add-note {
+    display: block;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  
+  .add-note:hover {
+    background-color: #2980b9;
+  }
+  
+  .add-note:active {
+    background-color: #1f618d;
+  }
+.container{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 20px;
+   @media screen and (max-width:768px) {
+       grid-template-columns: repeat(2,1fr);
+   }
+   @media screen and (max-width:586px) {
+       grid-template-columns: 100%;
+       padding: 10px 20px;
+   }
+}
+.card{
+    border-bottom: 1px solid rgb(0,0,0, .12);
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.edit-delete-wrapper{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.edit-icon{
+    width: 30px;
+    height: 30px;
+}
+.delete-icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.link-wrapper{
+    text-decoration: none;
+}
+.title{
+    margin-top: 0;
+    color: black;
+}
+.description{
+    font-size: 16px;
+    color: black;
+}
+
+.title-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+.description-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .description-input:focus {
+    border: 2px solid #000;
+    outline: none;
+  }
+  
+  .save-note {
+    display: block;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .save-note:hover {
+    background-color: #2980b9;
+  }
+  
+  .save-note:active {
+    background-color: #1f618d;
+  }
+
+  .spinner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
